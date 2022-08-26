@@ -1,5 +1,5 @@
 
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
     *{
         margin: 0;
         padding:0;
@@ -88,7 +88,7 @@
     .row1{
         display: flex;
         margin-left: 12rem;
-        font-family: Epilogue;
+        font-family: 'Epilogue',sans-serif;
     }
             /* some thing so you don't get confused  */
     /* here you'll learn how i write css for columns */
@@ -96,30 +96,26 @@
     /* clamp is a modren technique for typography 
     basically we give minimun prefered and max vlau */
     .col1{
-        flex-basis: 50%;
+        flex-basis: 40%;
         margin-top:8rem;
     }
     .col1 > h1 {
-        font-size: clamp(4rem,5.5vw,15vw);
+        font-size: clamp(4em,4vw,15vw);
         line-height: .8;
-        margin-bottom: clamp(2rem,6vh,12vh);
+        margin-bottom: clamp(2rem,7vh,12vh);
     }
-    .col1 > p{
-        font-size: clamp(1.6rem,2rem,2vw);
+    .col1 > p {
+        font-size: clamp(1.4vw,1.9vw,2em);
         color:hsl(0, 0%, 41%);
     }
     .col2 {
         display: flex;
-        flex-basis:50% ;
+        flex-basis:60% ;
         justify-content: center;
     }
     .hero-icon {
-        /* width:clamp(10rem,32rem,35rem); */
-        width:clamp(30%,55%,60%);
-        /* width: min(20vw,80%); */
-        /* max-height: 30rem; */
-        /* object-fit: cover; */
-    }
+        width: 33rem;
+     }
     .learn-button{
         margin-top: 5rem;
         background-color: hsl(0, 0%, 8%);
@@ -138,8 +134,10 @@
     }
     /* // basiclly i've used here pseudon class so that i can select them withot writng code again and again  */
     .brands-icons img:nth-child(1),img:nth-child(3),img:nth-child(4) {
-        width: clamp(5rem,10vw,10rem);
-        margin-right: 4rem;
+        width: clamp(5rem,4vw,10rem);
+        margin-right: 2rem;
+        /* margin-left: 2rem; */
+
     }
     .brands-icons img:nth-child(2) {
         max-width:clamp(2.5rem,5vw,8rem);
@@ -239,31 +237,24 @@
     }
     @media (max-width:760px) {
         html {
-            font-size: 62%;
+            font-size: 65%;
         }
-        .login {
-            padding: .8rem .8rem;
-            font-size: 1rem;
-            border-radius: 9px;
+        .hero-icon {
+            width: 25rem;
         }
-        .logo {
-            width: 4rem;
-        }
+      
         nav ul li {
             margin-right: 1rem;
         }
         .learn-button {
-            font-size: 1rem;
-            padding: 1rem 1.2rem;
+            /* font-size: 1rem;
+            padding: 1rem 1.2rem; */
         }
         .brands-icons img:nth-child(1),img:nth-child(3),img:nth-child(4),.img:nth-child(2) {
             margin-right: 2rem;
         }
     }
-    @media (max-width:600px) {
-        html {
-            font-size: 60%;
-        }
+    @media (max-width:650px) {
           header .menu  {
             display: flex;
             width:3rem;
@@ -273,6 +264,9 @@
           .logo {
             width: 5rem;
           }
+          .row1 {
+            flex-direction: column-reverse;
+        }
         header {
             padding: 2rem 1rem;
             margin-bottom: 2rem;
@@ -280,12 +274,7 @@
         .mobile-design {
             display: flex;
             margin-bottom: 3rem;
-        }
-        .row1 {
-            flex-direction: column-reverse;
-        }
-        .mobile-design {
-           width: 100%;
+            width: 100%;
         }
         .hero-icon {
             display: none;
@@ -304,29 +293,17 @@
             list-style:2 ;
         }
          .col1 h1{
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
         }
-        .col1 .learn-button 
-        {
-            margin-top: 2rem;
-            margin-bottom: 4rem;
+        .col1 > p {
+            font-size: 1.8rem;
         }
         .brands-icons {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
         }
         .brands-icons img:nth-child(1),img:nth-child(3),img:nth-child(4){
             margin-right: 2rem;
-            /* width: 48em; */
         }
     }
       
-    
-    
-
-
-
-
-
-
-
