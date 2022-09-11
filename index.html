@@ -1,117 +1,213 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fronend mentor project</title>
-    <link rel="shortcut icon" href="/images/favicon-32x32.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-</head>
-<body>   
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-    <!-- // Header sections starts -->
-    <div class="wrapper">
-        <header>
-            <div class="left-area">
-                <img src="images/logo.svg" alt="lo" class="logo">
-                <nav>
-                    <ul>
-                        <li class="arrow-1" >
-                            <a href="">Feature</a>
-                            <img src="./images/icon-arrow-down.svg" alt=""
-                            onclick="openfeature()"
-                            class="arrow-iocn-1">
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
 
-                            <div class="menu-area" id="menulist" >
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="first-section" >
+      <div class="header-section">
+    <img src="/images/logo.svg" alt="" class="logo">
+      <div class="right-area">
+        <nav id="primary-nav">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+          </ul>
+        </nav>
+        <button class="contact">Contact</button>
+      </div>
+      <img src="/images/icon-hamburger.svg" alt="" class="icon">
+    </div>
+  
+    
+    
+        <div class="hero-sect">
+          <h1>We are creatives</h1>
+         <img src="/images/icon-arrow-down.svg" alt="" class="hero-arrow">
+        </div>
 
-                            <div class="menu1"  >
-                              <div class="sub-menu">
-                                <img src="./images/icon-todo.svg" alt="todolist">
-                                <p>Todo list</p>
-                              </div>
+      </section>
 
-                              <div class="sub-menu">
-                                <img src="./images/icon-calendar.svg" alt="todolist">
-                                <p>calander</p>
-                              </div>
+      <!-- // Main contents starts from here  -->
+      <main>
+        <section class="services-area">
 
-                              <div class="sub-menu">
-                                <img src="./images/icon-reminders.svg" alt="todolist">
-                                <p>remaning</p>
-                              </div>
+          <div class="col-1">
+            <h2 class="card-tittle">Transform your <br> brand</h2>
+            <p class="discription">
+              We are a full-service creative agency specializing in <br> helping brands
+              grow fast. Engage your clients through <br> compelling visuals that do
+              most of the marketing for you.
+              <p class="learn-more">Learn more</p> 
+            </p>
+          </div>
+  
+        <div class="col-2">
+        
+        </div>
 
-                              <div class="sub-menu">
-                                <img src="./images/icon-planning.svg" alt="todolist">
-                                <p>palnning</p>
-                              </div>
-                            </div>
-                        </div>
-                        </li>
-                        
-                        <li class="arrow-2">
-                            <a href="">compnay</a>
-                            <img src="./images/icon-arrow-down.svg" alt="" class="arrow-icon"
-                            onclick="abouts()"
-                            >
-                           <div class="menu-area-2" id="menulisttwo">
-                            <div class="menu2" >
-                                <div class="sub-divs">
-                                    <p>History</p>
-                                    <p>Team</p>
-                                </div>
-                            </div>
-                        </div>
-                        </li>
-                        <li><a href="">Careers</a></li>
-                        <li><a href="">About</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="right-area">
-                <p>login</p>
-                <button type="submit" class="login">Register</button>
-            </div>
-            <img src="./images/icon-menu.svg" alt="" class="menu">
-        </header>
-        <div class="row1">
-            <div class="col1">
-                <h1>
-                    Make  remote work
-                </h1>
-                <p>
-                    Get your team in sync, no matter your location. <br> Streamline processes, 
-                    create team rituals, and watch <br> productivity soar.
-                </p>
-                <button class="learn-button" type="button">Learn more</button>
-                 <div class="brands-icons">
-                    <img src="./images/client-databiz.svg" alt="" class=brands-icon"">
-                    <img src="./images/client-audiophile.svg" alt="" class="brands-icon">
-                    <img src=./images/client-meet.svg" alt="" class=brands-icon"">
-                    <img src="./images/client-maker.svg" alt="" class="brands-icon">    
-                 </div>
-               </div>
-             <div class="col2">
-            <img src="./images/image-hero-desktop.png" alt="" class="hero-icon">
-            <img src="./images/image-hero-mobile.png" alt="" class="mobile-design"> 
+        <div class="col-3">
+          
+        </div>
+
+        <div class="col-4">
+        
+          <h2 class="card-tittle">Stand out to the right <br> audience</h2>
+          <p class="discription">
+            Using a collaborative formula of designers, researchers,<br>
+            photographers, videographers, and copywriters, we’ll <br> build and
+            extend your brand in digital places.
+          </p>
+          <p class="learn-more">Learn more</p>
+        </div>
+
+      </section>
+
+      <section>
+        <div class="un">
+          <div class="col-5">
+  
+  
+            
+            <!-- <div class="text-cor">
+            <h3>Graphic design</h3>
+            <p class="green-text">
+              Great design makes you memorable. We deliver <br> artwork that
+              underscores your brand message <br> and captures potential clients’
+              attention.
+            </p>
+          </div> -->
+        </div>
+  
+          <div class="col-6">
+          
+            <!-- <div class="text-cor">
+            <h3>Photography</h3>
+            <p class="blue-text">
+              Increase your credibility by getting the most <br> stunning, high-quality
+              photos that improve your <br> business image.
+            </p>
+          </div> -->
           </div>
         </div>
-    </div> 
+      </section>
+       <!-- testtmonial section starts -->
+      <section class="test">
+        <p class="test-hea">Client testimonials </p>
+        <div class="testimonials--">
+     <div class="testimonial">
+      <img src="/images/image-emily.jpg" alt="" class="speak">
+      <p class="test-p">
+        We put our trust in Sunnyside and they <br> delivered,
+      making sure our needs were met  <br> and deadlines were always hit
+      </p>
+      <p class="test-t">
+        Emily R.
+      </p>
+       <p class="test-sub">
+        Marketing Director
+       </p>
+     </div>
+
+    <div class="testimonial">
+      <img src="/images/image-jennie.jpg" alt="" class="speak">
+      <p class="test-p">
+        Sunnyside’s enthusiasm coupled with  <br> keen interest
+        in our brand’s success made it <br> a satisfying and enjoyable experience.
+      </p>
+      <p class="test-t">
+        Thomas S. 
+      </p>
+       <p class="test-sub">
+        Chief Operating Officer
+       </p>
+     </div>
+
+     <div class="testimonial">
+      <img src="/images/image-thomas.jpg" alt="" class="speak">
+      <p class="test-p">
+        Incredible end result! Our sales
+        increased <br> over 400% when we worked with Sunnyside. <br> Highly recommended!  
+      </p>
+      <p class="test-t">
+        Jennie F.
+      </p>
+       <p class="test-sub">
+        About Services Projects Contact
+       </p>
+     </div>
+    </div>
+    </section>
+
+     <Section class="display-area">
+        <img src="/images/mobile/image-gallery-milkbottles.jpg" alt="">
+        <img src="/images/mobile/image-gallery-orange.jpg" alt="">
+        <img src="/images/mobile/image-gallery-cone.jpg" alt="">
+        <img src="/images/mobile/image-gallery-sugar-cubes.jpg" alt="">
+     </Section>
+
+    </main>
+      
+    <!-- footer area starts  -->
+    <footer>
+      <div class="footer-wrapper">
+      <img src="/images/logo.svg" alt="" class="logo">
+
+     <nav id="secondary-nav">
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+      </ul>
+    </nav>
+
+    <div class="social-media-links">
+      <img src="/images/icon-facebook.svg" alt="facebook">
+      <img src="/images/icon-instagram.svg" alt="instagram">
+      <img src="/images/icon-twitter.svg" alt="twitter">
+      <img src="/images/icon-pinterest.svg" alt="our pinterest">
+    </div>
+  </div>
+
+    </footer>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
     <script>
-    //    view section 
-      let menulist=document.getElementById('menulist');
+       const toggle=document.getElementsByClassName('icon')[0];
+       const links=document.getElementsByClassName('right-area')[0];
+     
+      toggle.addEventListener ('click',() =>{
+        links.classlist.toggle('active');
+      })
 
-      function openfeature() {
-        menulist.classList.toggle("open-menu");
-      }
-      // second 
-      let menulisttwo=document.getElementById('menulisttwo');
-
-      function abouts() {
-        menulisttwo.classList.toggle("open-menu-two")
-      }
-    </script>  
-</body>
+    </script>
+  </body>
 </html>
